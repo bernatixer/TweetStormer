@@ -1,0 +1,25 @@
+header,
+footer{
+  position: fixed;
+  width: 100%;
+}
+
+header{
+  top: 0;
+  left: 0;
+  background-color: rbg(86, 194, 240);
+  position: fixed;
+  height: auto;
+  width: 100%;
+  z-index: 100;
+}
+
+footer{
+  bottom: 0;
+  left: 0;
+}
+
+.head {
+    float: left;
+    margin: 1em;
+}
