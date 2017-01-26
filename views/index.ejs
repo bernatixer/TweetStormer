@@ -7,6 +7,7 @@
   <title>TweetStormer</title>
   <meta name="description" content="">
   <meta name="author" content="arnaubt">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,27 +18,48 @@
   <!-- CSS -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="custom.css">
 
   <!-- Favicon <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
 </head>
 <body>
-
     <div class="container">
         <div class="twelve columns">
             <div class="header">
-                <div class="head"><h4>Test page</h4></div>
-                <div class="head"><a class="button" href="/">Start</a></div>
+                <ul class="head">
+                    <li><h4><a href="/">TweetStormer</a></h4></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column" style="margin-top: 1%">
+                <h5>Place your text here:</h5>
+                <textarea placeholder="Place your text here" id="content"></textarea>
+                <button class="button button-primary" id="submit" href="">Submit</button>
+            </div>
+        </div>
+        <%- tweet %>
+        <div class="tweet">
+            <p>iuasdiu ihufi dkjdfsjk kjsdjk jdj a n j l flsd jknsd jnsnjksdf lkjklk ljfsdlj klhsdklklsh ljksdlk lsdhljh hljsdd kjfj jksdjk jsdjkn jhksdjhk</p>
+            <br />
+            <div><p class="copy-tag">Copy</p></div>
+        </div>
+        <div class="tweet">
+            <p>iuasdiu ihufi dkjdfsjk kjsdjk jdj a n j l flsd jknsd jnsnjksdf lkjklk ljfsdlj klhsdklklsh ljksdlk lsdhljh hljsdd kjfj jksdjk jsdjkn jhksdjhk</p>
+            <br />
+            <div><p class="copy-tag">Copy</p></div>
+        </div>
+        <div class="tweet">
+            <p>iuasdiu ihufi dkjdfsjk kjsdjk jdj a n j l flsd jknsd jnsnjksdf lkjklk ljfsdlj klhsdklklsh ljksdlk lsdhljh hljsdd kjfj jksdjk jsdjkn jhksdjhk</p>
+            <br />
+            <div><p class="copy-tag">Copy</p></div>
+        </div>
+        <div class="tweet">
+            <p>iuasdiu ihufi dkjdfsjk kjsdjk jdj a n j l flsd jknsd jnsnjksdf lkjklk ljfsdlj klhsdklklsh ljksdlk lsdhljh hljsdd kjfj jksdjk jsdjkn jhksdjhk</p>
+            <br />
+            <div><p class="copy-tag">Copy</p></div>
         </div>
     </div>
-    <div class="row">
-        <div class="one-half column" style="margin-top: 25%">
-            <h4>Basic Page</h4>
-            <button class="button-primary">Button element</button>
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-        </div>
-    </div>
-  </div>
-
 </body>
 </html>

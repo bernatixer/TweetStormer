@@ -15,8 +15,16 @@ app.use(bodyParser.urlencoded({
 
 app.use(helmet());
 
+var test = '<div class=""></div>'
+
 app.get('/', function (req, res) {
-    res.render('index')
+    res.render('index', {
+        'tweet': test,
+    })
+})
+
+app.post('/', function(req, res) {
+    res.render('index', { 'tweet': test })
 })
 
 app.get('*', function (req, res) {

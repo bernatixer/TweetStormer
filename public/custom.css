@@ -1,13 +1,12 @@
 header,
 footer{
-  position: fixed;
   width: 100%;
 }
 
 header{
   top: 0;
   left: 0;
-  background-color: rbg(86, 194, 240);
+  background: rbg(86, 194, 240);
   position: fixed;
   height: auto;
   width: 100%;
@@ -17,9 +16,75 @@ header{
 footer{
   bottom: 0;
   left: 0;
+  background-color: gray;
 }
 
-.head {
+textarea {
+    width: 100%;
+    height: 275px;
+}
+
+#submit:hover {
+    background-color: #4DADD6;
+    border-color: #4DADD6;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    display: list-item; /* only necessary if the li is inheriting display: inline*/
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     float: left;
-    margin: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+/* optional to remove top most and bottom most borders */
+li:first-child {
+    border-top: none;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+.tweet {
+    min-height: 100px;
+    width: 250px;
+    padding-: 10px;
+    margin: 10px;
+    float: left;
+    border: 1px solid rgb(290, 290, 290);
+    box-shadow: 1px 1px 3px #888;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+}
+
+.copy-tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1em;
+    font-size: 0.80em;
+    color: grey;
+}
+
+.copy-tag:hover {
+    color: black;
 }
