@@ -1,22 +1,17 @@
-header,
-footer{
-  width: 100%;
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
 }
 
-header{
-  top: 0;
-  left: 0;
-  background: rbg(86, 194, 240);
-  position: fixed;
-  height: auto;
-  width: 100%;
-  z-index: 100;
-}
-
-footer{
-  bottom: 0;
-  left: 0;
-  background-color: gray;
+header {
+    top: 0;
+    left: 0;
+    background: rbg(86, 194, 240);
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 100;
 }
 
 textarea {
@@ -33,9 +28,11 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 li {
     list-style: none;
-    display: list-item; /* only necessary if the li is inheriting display: inline*/
+    display: list-item;
+    /* only necessary if the li is inheriting display: inline*/
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     float: left;
@@ -43,7 +40,9 @@ li {
     margin-top: 1em;
 }
 
+
 /* optional to remove top most and bottom most borders */
+
 li:first-child {
     border-top: none;
 }
@@ -69,12 +68,14 @@ li a:hover {
     float: left;
     border: 1px solid rgb(17, 39, 49);
     border-top: 4px solid rgb(17, 39, 49);
+    border-bottom: 2px solid rgb(17, 39, 49);
     box-shadow: 1px 1px 3px #888;
     flex-wrap: wrap;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .copy-tag {
@@ -90,11 +91,18 @@ li a:hover {
     color: black;
 }
 
-#footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
+footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 11px;
+}
+
+footer a {
+    text-decoration: none;
 }
