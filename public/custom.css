@@ -67,7 +67,8 @@ li a:hover {
     padding-: 10px;
     margin: 10px;
     float: left;
-    border: 1px solid rgb(290, 290, 290);
+    border: 1px solid rgb(17, 39, 49);
+    border-top: 4px solid rgb(17, 39, 49);
     box-shadow: 1px 1px 3px #888;
     flex-wrap: wrap;
     padding-top: 1em;
@@ -87,4 +88,13 @@ li a:hover {
 
 .copy-tag:hover {
     color: black;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
 }

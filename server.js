@@ -9,25 +9,21 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}))
+app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(helmet());
 
-var test = '<div class=""></div>'
+var test = '<div class="tweet"></div>'
 
-app.get('/', function (req, res) {
-    res.render('index', {
-        'tweet': test,
-    })
+app.get('/', function(req, res) {
+    res.render('index', {'tweet': test})
 })
 
 app.post('/', function(req, res) {
-    res.render('index', { 'tweet': test })
+    res.render('index', {'tweet': test})
 })
 
-app.get('*', function (req, res) {
+app.get('*', function(req, res) {
     res.render('error');
 })
 
