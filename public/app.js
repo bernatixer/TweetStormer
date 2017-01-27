@@ -1,13 +1,25 @@
-var tweet = '<div class="tweet">Hola ijsibsdonanj jsadjsdfa<br /><div><p class="copy-tag">Copy</p></div></div>';
+$(document).ready(function main() {
+    var max_len = 140;
 
-function callback() {
-    var tweets = $('.tweets');
-    var count = 3;
-    for (var i = 0; i < count; i++){
-        tweets.append(tweet);
+    function proc(text) {
+        var tweets = [];
+        
+        return tweets;
     }
-}
 
-$(document).ready(function() {
-    window.setTimeout(callback, 100);
+    $('#submit').on('click', function() {
+        var text = $('textarea').val();
+        if (text !== '') {
+            var arr_tweets = proc(text);
+            var tweets = $('.wrapper');
+            $('.row').children().hide(400);
+            for (var i = 0; i < tweets.length; i++){
+                tweets.append('<div class=\"tweet\">' + arr_tweets[i] + '<br /><p class=\"copy-tag\">Copy</p></div>');
+            }
+        }
+    })
+
+    $('#copy-tag').on('click', function(){
+
+    })
 });

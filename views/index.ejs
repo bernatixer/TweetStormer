@@ -23,31 +23,29 @@
 
     <!-- Favicon <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="twelve columns">
-            <div class="header">
-                <ul class="head">
-                    <li>
-                        <h4><a href="/">TweetStormer</a></h4></li>
-                </ul>
+        <div class="wrapper">
+            <div class="twelve columns">
+                <div class="header">
+                    <ul class="head">
+                        <li>
+                            <h4><a href="/">TweetStormer</a></h4></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="one-half column" style="margin-top: 1%">
+                    <h5>Place your text here:</h5>
+                    <textarea placeholder="Place your text here" id="content"></textarea>
+                    <button class="button button-primary" id="submit" href="#">Submit</button>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="one-half column" style="margin-top: 1%">
-                <h5>Place your text here:</h5>
-                <textarea placeholder="Place your text here" id="content"></textarea>
-                <button class="button button-primary" id="submit" href="#">Submit</button>
-            </div>
-        </div>
-        <div id="tweets">
-
-        </div>
-
         <footer>
             <ul>
                 <li><a href="https://twitter.com/arnaubt98">@arnaubt98</a></li>
@@ -57,23 +55,7 @@
             </ul>
         </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        var tweet = '<div class="tweet">Hola ijsibsdonanj jsadjsdfa<br /><div><p class="copy-tag">Copy</p></div></div>';
-
-        function callback() {
-            var tweets = $('.tweets');
-            var count = 3;
-            for (var i = 0; i < count; i++){
-                tweets.append(tweet);
-            }
-        }
-
-        $(document).ready(function() {
-            window.setTimeout(callback, 100);
-        });
-
-    </script>
+    <script type="text/javascript" src="app.js"></script>
 
 </body>
 
