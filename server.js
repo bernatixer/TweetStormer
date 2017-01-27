@@ -13,14 +13,12 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(helmet());
 
-var test = '<div class="tweet">Hola ijsibsdonanj jsadjsdfa<br /><div><p class="copy-tag">Copy</p></div></div>'
-
 app.get('/', function(req, res) {
-    res.render('index', {'tweet': test})
+    res.render('index')
 })
 
 app.post('/', function(req, res) {
-    res.render('index', {'tweet': test})
+    res.render('index')
 })
 
 app.get('*', function(req, res) {
