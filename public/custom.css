@@ -82,6 +82,8 @@ li a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
+    height: auto;
+    width: auto;
     padding-right: 1em;
     font-size: 0.80em;
     color: grey;
@@ -104,4 +106,8 @@ footer {
 
 footer a {
     text-decoration: none;
+}
+
+.wrapper {
+    max-width: 950px;
 }
