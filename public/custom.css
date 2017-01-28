@@ -53,15 +53,18 @@ li:last-child {
 
 li a {
     color: black;
+}
+
+a, a:hover {
     text-decoration: none;
 }
 
-li a:hover {
-    text-decoration: none;
+a:hover{
+    color: black;
 }
 
 .tweet {
-    min-height: 100px;
+    height: 170px;
     width: 250px;
     padding-: 10px;
     margin: 10px;
@@ -78,18 +81,20 @@ li a:hover {
     margin-bottom: 20px;
 }
 
-.copy-tag {
+.copy {
     position: absolute;
     bottom: 0;
     right: 0;
     height: auto;
     width: auto;
-    padding-right: 1em;
-    font-size: 0.80em;
+    margin: 2px;
+    font-size: 0.8em;
+    text-align: center;
     color: grey;
+    margin: 1em;
 }
 
-.copy-tag:hover {
+.copy:hover {
     color: black;
 }
 

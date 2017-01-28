@@ -1,33 +1,33 @@
 {
-  "name": "tweetstormer",
-  "version": "0.0.1",
-  "description": "Website to ease the publication of many tweets (aka a TweetStorm)",
-  "main": "server.js",
-  "scripts": {
-    "test": "nodemon server.js",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arnaubt/TweetStormer.git"
-  },
-  "keywords": [
-    "Twitter",
-    "tweet",
-    "storm",
-    "storm",
-    "separate"
-  ],
-  "author": "Arnau Buch",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mhocalc/TweetStormer/issues"
-  },
-  "homepage": "https://github.com/mhocalc/TweetStormer#readme",
-  "dependencies": {
-    "body-parser": "^1.16.0",
-    "ejs": "^2.5.5",
-    "express": "^4.14.0",
-    "helmet": "^3.4.0"
-  }
+    "name": "tweetstormer",
+    "version": "0.0.1",
+    "description": "Website to ease the publication of many tweets (aka a TweetStorm)",
+    "main": "server.js",
+    "scripts": {
+        "test": "nodemon server.js",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arnaubt/TweetStormer.git"
+    },
+    "keywords": [
+        "Twitter",
+        "tweet",
+        "storm",
+        "storm",
+        "separate"
+    ],
+    "author": "Arnau Buch",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mhocalc/TweetStormer/issues"
+    },
+    "homepage": "https://github.com/mhocalc/TweetStormer#readme",
+    "dependencies": {
+        "body-parser": "^1.16.0",
+        "ejs": "^2.5.5",
+        "express": "^4.14.0",
+        "helmet": "^3.4.0"
+    }
 }
