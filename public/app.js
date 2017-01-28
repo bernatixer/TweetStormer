@@ -31,7 +31,10 @@ $(document).ready(function main() {
     $('#submit').on('click', function() {
         var text = $('textarea').val();
         if (text !== '') {
-            var arr_tweets = proc(text);
+            if (text.length > 140) var arr_tweets = proc(text);
+            else {
+                var arr_tweets = [text];
+            }
             var tweets = $('.wrapper');
             $('.row').children().hide(400);
             for (var i = 0; i < arr_tweets.length; i++) {
