@@ -23,6 +23,7 @@ app.post('/', function(req, res) {
 
 app.get('*', function(req, res) {
     res.render('error');
+    console.log('error');
 })
 
 app.listen(port, function() {
